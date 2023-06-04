@@ -1718,34 +1718,6 @@
 			};
 		};
 
-		tlmm_gpio_key {
-			gpio_key_active: gpio_key_active {
-				mux {
-					pins = "gpio64", "gpio113";
-					function = "gpio";
-				};
-
-				config {
-					pins = "gpio64", "gpio113";
-					drive-strength = <2>;
-					bias-pull-up;
-				};
-			};
-
-			gpio_key_suspend: gpio_key_suspend {
-				mux {
-					pins = "gpio64", "gpio113";
-					function = "gpio";
-				};
-
-				config {
-					pins = "gpio64", "gpio113";
-					drive-strength = <2>;
-					bias-pull-up;
-				};
-			};
-		};
-
 		pmx_mdss: pmx_mdss {
 			mdss_dsi_active: mdss_dsi_active {
 				mux {
