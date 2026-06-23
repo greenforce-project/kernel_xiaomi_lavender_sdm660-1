@@ -45,6 +45,12 @@ menu "Xiaomi board selection"
 		help
 		  Support for Xiaomi Redmi Note 7
 
+	config XIAOMI_LAVENDER_NEW_CAMERA
+		bool "Use new camera blobs for Xiaomi lavender"
+		depends on MACH_XIAOMI_LAVENDER
+		help
+		  Enable support for newer camera userspace blobs on Xiaomi Redmi Note 7 (lavender).
+
 	config MACH_XIAOMI_TULIP
 		bool "Xiaomi tulip board"
 		select MACH_LONGCHEER
